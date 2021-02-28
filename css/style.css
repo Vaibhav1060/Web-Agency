@@ -432,7 +432,7 @@ body.dark{
     background-repeat:no-repeat;
     position:relative;
     z-index:1;
-    height:60vh;
+   
 }
 
 .download::before{
@@ -888,6 +888,10 @@ box-shadow: var(--shadow-black-100);
     color:var(--black-900);
 }
 
+.form__flex{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 .contact__span{
@@ -967,6 +971,16 @@ box-shadow: var(--shadow-black-100);
         margin: 0.5rem 0rem;
     }
 
+    .name__input{
+        width:95%;
+    
+
+    }
+
+    .form__flex{
+        justify-content: space-between;
+    }
+
     .hero__circle{
         width:320px;
         height:320px;
@@ -1002,14 +1016,14 @@ box-shadow: var(--shadow-black-100);
    .fun__row2{
        justify-content: center;
    }
+
+   
   
 
 }
 
 @media(max-width:767px){
-    .hero{
-       height:160vh;
-    }
+    
 
     .hero__image{
         margin-top: 130px;
@@ -1022,6 +1036,9 @@ box-shadow: var(--shadow-black-100);
     .contact__form .form-control{
         width: 100% !important;
     }
+       .form__flex {
+           justify-content: space-between;
+       }
 
     .name__input{
         width:100%;
@@ -1042,9 +1059,7 @@ box-shadow: var(--shadow-black-100);
         margin-bottom: 2rem;
     }
 
-    .download{
-        height:120vh;
-    }
+   
 
     .download__item{
         margin-bottom: 2rem;
@@ -1083,6 +1098,13 @@ box-shadow: var(--shadow-black-100);
     content:none;
 }
 
+.fun__box1,
+.fun__box2,
+.fun__box3,
+.fun__box4 {
+    margin: 2rem;
+}
+
 
 
 .works__item.line-right{
@@ -1090,6 +1112,7 @@ box-shadow: var(--shadow-black-100);
     margin:1.5rem 1rem;
     padding:1rem 0.8rem;
 }
+
 
 .download{
     padding:3rem 0rem;
@@ -1135,6 +1158,11 @@ box-shadow: var(--shadow-black-100);
 
 .footer__column{
     margin-bottom: 2rem;
+}
+
+.form__flex {
+    display: flex;
+    flex-direction: column;
 }
 
 
