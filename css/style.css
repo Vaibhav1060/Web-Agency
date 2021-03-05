@@ -105,6 +105,13 @@ body.dark {
   color: var(--color-3);
   animation: bounceTop_01 5s linear infinite;
 }
+
+.active{
+      color: #007bff;
+    border-bottom: 3px solid white;
+}
+
+
 .header {
   height: 15vh;
   background-color: var(--main-to-dark-color);
@@ -156,7 +163,7 @@ body.dark {
   height: 3px;
   background-color: white;
   position: absolute;
-  bottom: 0;
+  bottom: -10.99%;
   left: 0;
   right: 0;
   transition: all 0.2s ease;
@@ -902,8 +909,9 @@ body.dark {
 
 @media (max-width: 991px) {
   .navbar-nav {
-    background-color: var(--dark-to-main-color);
+    background-color: var(--main-color);
     margin-top: 0.3rem;
+    padding:1rem;
   }
 
   .navbar {
